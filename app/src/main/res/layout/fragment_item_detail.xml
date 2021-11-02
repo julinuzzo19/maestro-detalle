@@ -8,17 +8,11 @@
     tools:context=".ItemDetailHostActivity"
     tools:ignore="MergeRootFrame">
 
-
-
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/website"/>
-
-
-
-
-
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/website"
+                tools:context="com.example.maestrodetalle.ItemDetailFragment"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

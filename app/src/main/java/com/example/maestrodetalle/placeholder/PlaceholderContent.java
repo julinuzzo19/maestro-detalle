@@ -20,16 +20,14 @@ public class PlaceholderContent {
             new HashMap<String, PlaceholderItem>();
 
     static {
-        addItem(new PlaceholderItem("1", "Amazon", "http://www.amazon.com"));
-        addItem(new PlaceholderItem("2", "Google", "http://www.google.com"));
-        addItem(new PlaceholderItem("3", "Android", "http://www.android.com"));
+        addItem(new PlaceholderItem("1", "Amazon", "https://www.amazon.com"));
+        addItem(new PlaceholderItem("2", "Google", "https://www.google.com"));
+        addItem(new PlaceholderItem("3", "Android", "https://www.android.com"));
     }
     private static void addItem(PlaceholderItem item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
     }
-
-
 
 
     public static class PlaceholderItem {
@@ -53,19 +51,3 @@ public class PlaceholderContent {
     }
 }
 
-    /*
-    public final String id;
-    public final String content;
-    public final String details;
-
-    public PlaceholderItem(String id, String content, String details) {
-        this.id = id;
-        this.content = content;
-        this.details = details;
-    }
-
-    @Override
-    public String toString() {
-        return content;
-    }
-    */
